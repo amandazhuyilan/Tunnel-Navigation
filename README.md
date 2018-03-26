@@ -1,6 +1,6 @@
 ## Tunnel Navigation
 
-My graduate robotics course joint-effort project to navigate vehicle through tunnels and areas of low GPS reception with the vehicle's built in acceleration and encoder, to give users accurate turn-by-turn directions.
+My graduate robotics course joint-effort project to navigate vehicle through tunnels and areas of low GPS reception with the vehicle's built in acceleration and encoder, to give users accurate turn-by-turn directions. Limited to the scope of this project, we will be running our prototype based on the data collected through the Thomas P. O'Neil tunnel located in Boston, MA.
 
 ## Tools and Resources
 - Open source Navigation software that runs on multiple OS platforms: [Navit](https://github.com/navit-gps/navit)
