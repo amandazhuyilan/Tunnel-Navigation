@@ -12,20 +12,20 @@ Our robotics course project to navigate vehicle through tunnels and areas of low
 
 Before the rosbag can be read into Matlab, you need to add the dbw_mkz message definations to Matlab. I have already 'generated' the matlab messages and the jar file. You can download it by copying the folder from [HERE](https://drive.google.com/open?id=0B6xwBH7R5H0-M1o2andQQTNCU1k) (also in the ```dbw_mkz_msgs``` folder in the repo ).
 To add these to your Matlab, here are the following steps:
-- 1. Edit javaclasspath.txt, add the following file locations as new lines, and save the file:
+1. Edit javaclasspath.txt, add the following file locations as new lines, and save the file:
 Location of the javaclasspath.txt depends on your installation of matlab. This link has more details on where you can find it : https://www.mathworks.com/help/matlab/matlab_external/static-path.html#bvnynym
 Full address of the dbw_mkz_msgs-1.0.4.jar file that you downloaded above. 
 
 For my installation it is: ```/home/vik748/dbw_msgs/matlab_gen/jar/dbw_mkz_msgs-1.0.4.jar```
 
-- 2. Add the custom message folder to the MATLAB path by executing:
+2. Add the custom message folder to the MATLAB path by executing:
 Full address of the msggen folder that you downloaded above. For my installation it is 
 ```
 addpath('/home/vik748/dbw_msgs/matlab_gen/msggen')
 savepath
 ```
 
-- 3. Restart MATLAB and verify that you can use the custom messages. 
+3. Restart MATLAB and verify that you can use the custom messages. 
 Type "rosmsg list" and ensure that the output contains the generated
 custom message types.
 Once the definations are installed, you can access the variables as follows:
