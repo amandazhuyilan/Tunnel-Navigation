@@ -6,7 +6,6 @@ Our robotics course project to navigate vehicle through tunnels and areas of low
 - Open source Navigation software that runs on multiple OS platforms: [Navit](https://github.com/navit-gps/navit)
 - [ROS interface to Lincoln MKZ](https://drive.google.com/open?id=191uEPJnzKvJLzp2A-HyDsfB6DPPajgv8)
 - A Lincoln MKZ modified with a [Dataspeed ADAS package](http://dataspeedinc.com/wp-content/uploads/2016/11/adas-kit.pdf)
-- [Sample ROS bag](https://bitbucket.org/DataspeedInc/dbw_mkz_ros/src/9ef8c628fda9f5a5ab1a5441c202fe7b48ad64df/ROS_BAGS.md?fileviewer=file-view-default)
 
 
 ### Instructions to read dbw_mkz rosbag into Matlab
@@ -47,10 +46,12 @@ ts = timeseries(bagsteering, 'SteeringWheelAngle')
 
 ### Things to do:
 - Use Matlab's ```rossubscriber``` function to subscribe to ros topis that we care about:
-    -   - ```/vehicle/gps/fix```
-    -   - ```/vehicle/gps/time```
-    -   - ```/vehicle/imu/data_raw```
-    -   - ```/vehicle/wheel_speed_report```
+    - ```/vehicle/gps/fix```            (1 Hz, latitude, longitude, altitude)
+    - ```/vehicle/gps/time```   
+    - ```/vehicle/gps/vel```            (50 Hz, speed and yaw rate computed from steering report)
+    - ```/vehicle/imu/data_raw```       (100 Hz, accel, gyro, missing pitch gyro)
+    - ```/vehicle/wheel_speed_report``` (100 Hz, wheel speeds, magnitude only)
+
 and process it real time, show pop-up windows for notifications for directions.
 
 - Features want to be done on Matlab:
@@ -64,9 +65,6 @@ and process it real time, show pop-up windows for notifications for directions.
     - How does it updates location on map?
     - Can we feed it with our own GPS data?
 
-
-- Use Google maps API to get directions from A to B:
-    - Find out how Matlab deal with API calls.
     
 
 
