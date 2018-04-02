@@ -1,0 +1,42 @@
+package dbw_mkz_msgs;
+
+public interface SurroundReport extends org.ros.internal.message.Message {
+  static final java.lang.String _TYPE = "dbw_mkz_msgs/SurroundReport";
+  static final java.lang.String _DEFINITION = "Header header\n\n# Cross Traffic Alert (CTA)\nbool cta_left_alert\nbool cta_right_alert\nbool cta_left_enabled\nbool cta_right_enabled\n\n# Blind Spot Information System (BLIS)\nbool blis_left_alert\nbool blis_right_alert\nbool blis_left_enabled\nbool blis_right_enabled\n\n# Sonar Sensors\nbool sonar_enabled\nbool sonar_fault\n\n# Sonar ranges in meters, zero is no-detection\nfloat32[12] sonar\n\n# Sonar index enumeration\nuint8 FRONT_LEFT_SIDE=0\nuint8 FRONT_LEFT_CORNER=1\nuint8 FRONT_LEFT_CENTER=2\nuint8 FRONT_RIGHT_CENTER=3\nuint8 FRONT_RIGHT_CORNER=4\nuint8 FRONT_RIGHT_SIDE=5\nuint8 REAR_LEFT_SIDE=6\nuint8 REAR_LEFT_CORNER=7\nuint8 REAR_LEFT_CENTER=8\nuint8 REAR_RIGHT_CENTER=9\nuint8 REAR_RIGHT_CORNER=10\nuint8 REAR_RIGHT_SIDE=11\n";
+  static final byte FRONT_LEFT_SIDE = 0;
+  static final byte FRONT_LEFT_CORNER = 1;
+  static final byte FRONT_LEFT_CENTER = 2;
+  static final byte FRONT_RIGHT_CENTER = 3;
+  static final byte FRONT_RIGHT_CORNER = 4;
+  static final byte FRONT_RIGHT_SIDE = 5;
+  static final byte REAR_LEFT_SIDE = 6;
+  static final byte REAR_LEFT_CORNER = 7;
+  static final byte REAR_LEFT_CENTER = 8;
+  static final byte REAR_RIGHT_CENTER = 9;
+  static final byte REAR_RIGHT_CORNER = 10;
+  static final byte REAR_RIGHT_SIDE = 11;
+  std_msgs.Header getHeader();
+  void setHeader(std_msgs.Header value);
+  boolean getCtaLeftAlert();
+  void setCtaLeftAlert(boolean value);
+  boolean getCtaRightAlert();
+  void setCtaRightAlert(boolean value);
+  boolean getCtaLeftEnabled();
+  void setCtaLeftEnabled(boolean value);
+  boolean getCtaRightEnabled();
+  void setCtaRightEnabled(boolean value);
+  boolean getBlisLeftAlert();
+  void setBlisLeftAlert(boolean value);
+  boolean getBlisRightAlert();
+  void setBlisRightAlert(boolean value);
+  boolean getBlisLeftEnabled();
+  void setBlisLeftEnabled(boolean value);
+  boolean getBlisRightEnabled();
+  void setBlisRightEnabled(boolean value);
+  boolean getSonarEnabled();
+  void setSonarEnabled(boolean value);
+  boolean getSonarFault();
+  void setSonarFault(boolean value);
+  float[] getSonar();
+  void setSonar(float[] value);
+}

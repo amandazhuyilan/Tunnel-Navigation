@@ -1,0 +1,15 @@
+To use the custom messages, follow these steps:
+ 
+1. Edit javaclasspath.txt, add the following file locations as new lines, and save the file:
+ 
+/home/vik748/dbw_msgs/matlab_gen/jar/dbw_mkz_msgs-1.0.4.jar
+ 
+2. Add the custom message folder to the MATLAB path by executing:
+ 
+addpath('/home/vik748/dbw_msgs/matlab_gen/msggen')
+savepath
+ 
+3. Restart MATLAB and verify that you can use the custom messages. 
+   Type "rosmsg list" and ensure that the output contains the generated
+   custom message types.
+ 
