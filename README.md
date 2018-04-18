@@ -1,11 +1,25 @@
 ## Tunnel Navigation
 
-Our robotics course project to navigate vehicle through tunnels and areas of low GPS reception with the vehicle's built in acceleration and encoder, to give users accurate turn-by-turn directions. Limited to the scope of this project, we will be running our prototype based on the data collected through the Thomas P. O'Neil tunnel located in Boston, MA.
+A joint effort robotics course project to estimate vehicle's location in tunnels and areas of low GPS reception with the vehicle's built-in encoder (wheel speed sensor) and our own GPS and IMU. Limited to the scope of this project, we will be running our prototype based on the data collected through the Thomas P. O'Neil tunnel located in Boston, MA.
 
 ## Tools and Resources
-- Open source Navigation software that runs on multiple OS platforms: [Navit](https://github.com/navit-gps/navit)
+- GPS : GlobalSat BU-353-S4 USB GPS Receiver
+- IMU: VN-100
+- Northeastern University Car of the Future: a Lincoln MKZ modified with a [Dataspeed ADAS package](http://dataspeedinc.com/wp-content/uploads/2016/11/adas-kit.pdf)
 - [ROS interface to Lincoln MKZ](https://drive.google.com/open?id=191uEPJnzKvJLzp2A-HyDsfB6DPPajgv8)
-- A Lincoln MKZ modified with a [Dataspeed ADAS package](http://dataspeedinc.com/wp-content/uploads/2016/11/adas-kit.pdf)
+
+## High level system overview
+<img src="https://github.com/amandazhuyilan/Tunnel-Navigation/blob/master/Documents/overview.jpg" width= "600">
+
+## Estimated Routes Results and Comparison
+Estimated and actual routes plotted with Google Maps API:
+
+<img src="https://github.com/amandazhuyilan/Tunnel-Navigation/blob/master/Documents/GPS_plotted%20routes.png" width= "800">
+
+
+## Dead reckoning (Why car's GPS still works in tunnels)
+
+It is possible the Lincoln MKZ is automatically utilizing a suite of sensor data to perform dead reckoning and reporting these results as GPS data. It is also possible the car is interfacing over LTE with a real-time mapping API that delivers estimated GPS updates based on the position trajectory of the road on which the car is travelling. We were skeptical about the accuracy of these coordinates and implemented our own methods to validate their accuracy. 
 
 ### Info about Akerman Steering Modelling Milestones
 - Implement Ackermann steering model
