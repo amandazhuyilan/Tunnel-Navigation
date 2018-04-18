@@ -1,0 +1,9 @@
+package gps_lcm;
+
+struct gps_t
+{
+    string time;
+    string lat;	
+    string lon;
+    string alt;
+}

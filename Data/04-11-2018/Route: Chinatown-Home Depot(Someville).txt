@@ -1,0 +1,103 @@
+ Origin Address:  Jeharis Family Center for Biomedical and Nutritional Sciences, 150 Harrison Ave, Boston, MA 02111, USA 
+
+Destination Address:  75 Mystic Ave, Somerville, MA 02145, USA 
+
+Origin location:  lat: 42.349448, unog' -71.06199149999999 
+
+Destination location:  lat: 42.3898161, long: -71.0799681 
+
+Leg start location:  lat: 42.349448, unog' -71.06199149999999
+Leg end location:  lat: 42.3463436, long: -71.0632572
+instruction:  Head south on Harrison Ave toward Bennet St
+distance:  361m 
+
+
+Leg start location:  lat: 42.3463436, long: -71.0632572
+Leg end location:  lat: 42.3459451, long: -71.0612728
+instruction:  Turn left onto Herald St
+distance:  169m 
+
+
+Leg start location:  lat: 42.3459451, long: -71.0612728
+Leg end location:  lat: 42.3440469, long: -71.0620594
+instruction:  Turn right onto Albany St
+distance:  221m 
+
+
+Leg start location:  lat: 42.3440469, long: -71.0620594
+Leg end location:  lat: 42.3439567, long: -71.06167719999999
+instruction:  Turn left onto Traveler St
+distance:  33m
+
+
+Leg start location:  lat: 42.3439567, long: -71.06167719999999
+Leg end location:  lat: 42.3445484999o99 u'lng': -71.0604407
+instruction:  Turn left onto the ramp to I-93 N
+distance:  151m 
+
+
+Leg start location:  lat: 42.3445484999o99 u'lng': -71.0604407
+Leg end location:  lat: 42.3589104, long: -71.0517258
+instruction:  Keep left at the fork, follow signs for I-93 N/Concord NH and merge onto I-93 N
+distance:  191m
+
+
+Leg start location:  lat: 42.3589104, long: -71.0517258
+Leg end location:  lat: 42.3720405, long: -71.0673192
+instruction:  Keep left to stay on I-93 N
+distance:  196m
+
+
+Leg start location:  lat: 42.3720405, long: -71.0673192
+Leg end location:  lat: 42.3782157, long: -71.07569210000001
+instruction:  Keep right to stay on I-93 N
+distance:  985m 
+
+
+Leg start location:  lat: 42.3782157, long: -71.07569210000001
+Leg end location:  lat: 42.3832673, long: -71.07623439999999
+instruction:  Take exit 28 toward MA-99/Sullivan Square/Somerville
+distance:  575m 
+
+
+Leg start location:  lat: 42.3832673, long: -71.07623439999999
+Leg end location:  lat: 42.3839281, long: -71.07383030000001
+instruction:  Turn right onto Cambridge St
+distance:  216m 
+
+
+Leg start location:  lat: 42.3839281, long: -71.07383030000001
+Leg end location:  lat: 42.3856915, long: -71.07614339999999
+instruction:  At the traffic circle, exit onto Main St
+distance:  544m 
+
+
+Leg start location:  lat: 42.3856915, long: -71.07614339999999
+Leg end location:  lat: 42.3891742, long: -71.0805128
+instruction:  Continue onto Mystic Ave
+distance:  528m 
+
+
+Leg start location:  lat: 42.3891742, long: -71.0805128
+Leg end location:  lat: 42.3892322, long: -71.0801792
+instruction:  Turn right
+distance: 29m
+
+
+Leg start location:  lat: 42.3892322, long: -71.0801792
+Leg end location:  lat: 42.3894133, long: -71.0804308
+instruction:  Turn left
+distance: 29m
+
+
+Leg start location:  lat: 42.3894133, long: -71.0804308
+Leg end location:  lat: 42.3897855, long: -71.0799315
+instruction:  Turn right
+distance:  58m
+
+
+Leg start location:  lat: 42.3897855, long: -71.0799315
+Leg end location:  lat: 42.3898161, long: -71.0799681
+instruction:  Turn leftDestination will be on the right
+distance: 5 m
+

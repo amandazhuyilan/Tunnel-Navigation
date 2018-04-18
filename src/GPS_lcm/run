@@ -1,0 +1,12 @@
+#/usr/bin/env bash
+sudo chmod 666 /dev/ttyUSB0
+export CLASSPATH=$PWD
+lcm-logger -s ./log/lcm-log-%F-%T &
+./gen-types.sh
+./buildjar.sh
+#./runspy.sh
+lcm-spy & 
+
+
+
+kill %1 %2 

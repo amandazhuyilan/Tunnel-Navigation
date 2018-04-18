@@ -7,6 +7,18 @@ Our robotics course project to navigate vehicle through tunnels and areas of low
 - [ROS interface to Lincoln MKZ](https://drive.google.com/open?id=191uEPJnzKvJLzp2A-HyDsfB6DPPajgv8)
 - A Lincoln MKZ modified with a [Dataspeed ADAS package](http://dataspeedinc.com/wp-content/uploads/2016/11/adas-kit.pdf)
 
+### Info about Akerman Steering Modelling Milestones
+- Implement Ackermann steering model
+    - Input: 4 wheel encoders and steering angle -> output: x-velocity, y-velocity and angular rate
+    - Measure / estimate model parameters by experimentation
+    - Create a ROS node for implementing the Akerman model -
+    - http://autsys.aalto.fi/fsr/attach/Material/Odometry_sensors.pdf
+    - http://wiki.ros.org/Ackermann%20Group
+
+- Compare performance of pure odometry to GPS and IMU 
+- Fuse odometry, GPS and IMU possibly using the ekf_localization_node from robot localization package http://docs.ros.org/lunar/api/robot_localization/html/index.html
+- Implement the ROS Gmapping, Cartographer or other SLAM package for mapping and localization.
+
 
 ### Instructions to read dbw_mkz rosbag into Matlab
 
@@ -44,28 +56,15 @@ steeringvalue.Header.Stamp.NSec % For time stamp nano seconds
 If you just need a time_series for steering angles, you can use:
 ts = timeseries(bagsteering, 'SteeringWheelAngle')
 
-### Things to do:
-- Use Matlab's ```rossubscriber``` function to subscribe to ros topis that we care about:
-    - ```/vehicle/gps/fix```            (1 Hz, latitude, longitude, altitude)
-    - ```/vehicle/gps/time```   
-    - ```/vehicle/gps/vel```            (50 Hz, speed and yaw rate computed from steering report)
-    - ```/vehicle/imu/data_raw```       (100 Hz, accel, gyro, missing pitch gyro)
-    - ```/vehicle/wheel_speed_report``` (100 Hz, wheel speeds, magnitude only)
+### Data Processing
 
-and process it real time, show pop-up windows for notifications for directions.
+1. Splitting into smaller rosbags based on topics:
 
-- Features want to be done on Matlab:
-    - When GPS signal falls below a certain threshold, translating wheel speed data to GPS data.
-    - With Google Maps API:
-        - Get directions with user's input start and destination.
-        - Can we plot our route by POSTing our GPS to Google Maps API? 
+``` rosbag filter CAR.bag GPS_fix.bag "topic = '/vehicle/GPS_fix'"```
+2.  Reading into MATLAB (change ```addpath``` variables accordingly) and convert to csv files
+    - csv format files saved under /Data/DATE/ cvs
 
-- Look through Navit open-source navigation software in detail, need to figure out and present the following:
-    - How and where does Navit reads its GPS data from?
-    - How does it updates location on map?
-    - Can we feed it with our own GPS data?
+### Rosbag record instruction
+```rosbag record /vehicle/steering_report /imu/imu /imu/magnetic_field /vehicle/gps/fix /vehicle/gps/vel /vehicle/twist /vehicle/wheel_speed_report /vehicle/wheel_position_report```
 
     
-
-
-

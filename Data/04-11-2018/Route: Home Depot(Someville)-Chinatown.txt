@@ -1,0 +1,86 @@
+Origin Address:  75 Mystic Ave, Somerville, MA 02145, USA 
+
+Destination Address:  Jeharis Family Center for Biomedical and Nutritional Sciences, 150 Harrison Ave, Boston, MA 02111, USA 
+
+Origin location:  lat: 42.3898161, long: -71.0799681 
+
+Destination location:  Jeharis Family Center for Biomedical and Nutritional Sciences, 150 Harrison Ave, Boston, MA 02111, USA 
+
+Leg start location:  lat: 42.3898161, long: -71.0799681
+Leg end location:  lat: 42.3899148, long: -71.0800895
+instruction:  Head northwest
+distance: 15 m 
+
+
+Leg start location:  lat: 42.3899148, long: -71.0800895
+Leg end location:  lat: 42.3895335, long: -71.0805893
+instruction:  Turn left toward Mystic Ave
+distance:  59 m 
+
+
+Leg start location:  lat: 42.3895335, long: -71.0805893
+Leg end location:  lat: 42.3892322, long: -71.0801792
+instruction:  Turn left toward Mystic Ave
+distance: 48 m 
+
+
+Leg start location:  lat: 42.3892322, long: -71.0801792
+Leg end location:  lat: 42.3891742, lng: -71.0805128
+instruction:  Turn right toward Mystic Ave
+distance: 29m 
+
+
+Leg start location:  lat: 42.3891742, long: -71.0805128
+Leg end location:  lat: 42.3916294, long: -71.08324689999999
+instruction:  Turn right onto Mystic Ave
+distance: 356m 
+
+
+Leg start location:  lat: 42.3916294, long: -71.08324689999999
+Leg end location:  lat: 42.393363, long: -71.0848973
+instruction:  Continue onto Bailey Rd
+distance: 236m 
+
+
+Leg start location:  lat: 42.393363, long: -71.0848973
+Leg end location:  lat: 42.3902317, long: -71.0828673
+instruction:  Turn left onto the ramp to I-93 S
+distance: 441m 
+
+
+Leg start location:  lat: 42.3902317, long: -71.0828673
+Leg end location:  lat: 42.3634329, long: -71.0579589
+instruction:  Keep left at the fork, follow signs for I-93 S/Boston and merge onto I-93 S
+distance: 3755m 
+
+
+Leg start location: lat: 42.3634329, long: -71.0579589
+Leg end location:  lat: 42.3559811, long: -71.0514754
+instruction:  Keep left to stay on I-93 S
+distance: 1049m 
+
+
+Leg start location:  lat: 42.3559811, long: -71.0514754
+Leg end location:  lat: 42.353113, long: -71.0558984
+instruction:  Take exit 20A-20B toward South Station
+distance:  496m
+
+
+Leg start location:  lat: 42.353113, long: -71.0558984
+Leg end location:  lat: 42.3501392, long: -71.05976179999999
+instruction:  Merge onto John F Fitzgerald Surface Rd/Surface Rd
+distance: 491m 
+
+
+Leg start location:  lat: 42.3501392, long: -71.05976179999999}
+Leg end location:  {u'lat': 42.350625, u'lng': -71.0615081}
+instruction:  Turn right onto Kneeland StPass by E Boston Savings Bank (on the left)
+distance:  153m
+
+
+Leg start location:  lat: 42.350625, long: -71.0615081
+Leg end location:  lat: 42.349448, long: -71.06199149999999
+instruction:  Turn left at the 3rd cross street onto Harrison AveDestination will be on the left
+distance: 137m 
+
+
